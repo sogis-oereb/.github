@@ -1,0 +1,16 @@
+name: Ticket
+description: File an issue report
+body:
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Beschreibung
+    validations:
+      required: true
+  - type: checkboxes
+    id: urgent
+    attributes:
+      label: Urgentticket
+      options:
+        - label: Der Fehler verunmöglicht das weitere Arbeiten und muss schnellstmöglicht gefixed werden.
+          required: false

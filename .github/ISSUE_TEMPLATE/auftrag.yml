@@ -1,0 +1,40 @@
+name: Auftrag
+description: Fülle ein Auftragsformular aus
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before opening a bug report, please search for the behaviour in the existing issues. 
+        
+        ---
+        
+        Thank you for taking the time to file a bug report. To address this bug as fast as possible, we need some information.
+  - type: input
+    id: ausgangslange
+    attributes:
+      label: Ausgangslage
+      description: Kontext des Auftrages / Bestehende Lösung beschreiben.
+    validations:
+      required: true  
+  - type: textarea
+    id: ziele
+    attributes:
+      label: Ziele
+      description: Die zu erreichenden Ziele des Auftrages beschreiben.
+    validations:
+      required: true  
+  - type: input
+    id: auftraggeber
+    attributes:
+      label: Auftraggeber
+      description: Vorname und Name des Auftraggebers.
+    validations:
+      required: true
+  - type: textarea
+    id: abgrenzung
+    attributes:
+      label: Abgrenzung
+      description: Wichtig ist die klare Abgrenzung des Auftrages. Was ist nicht Bestandteil des Auftrages? Falls bereits weitere Ausbauschritte geplant sind, kann das hier vermerkt werden.
+      placeholder: Wird vom AGI ausgefüllt.
+    validations:
+      required: false

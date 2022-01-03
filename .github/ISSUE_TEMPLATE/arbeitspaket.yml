@@ -1,0 +1,31 @@
+name: Arbeitspaket
+description: Fülle ein Arbeitspaket aus
+body:
+  - type: textarea
+    id: inhalt
+    attributes:
+      label: Inhalt
+      description: Inhalt des Arbeitspaketes beschreiben.
+    validations:
+      required: true  
+  - type: textarea
+    id: input
+    attributes:
+      label: Input
+      description: Was ist der Input des Arbeitspaketes?
+    validations:
+      required: true  
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: Was ist der Output des Arbeitspaketes?
+    validations:
+      required: true  
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Tasks
+      description: Einzelne Tasks (Issues) des Arbeitspaketes.
+    validations:
+      required: false
